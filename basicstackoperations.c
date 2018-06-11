@@ -10,7 +10,7 @@ void push(int* stack,int data)
 }
 int pop(int* stack)
 {
-	return stack[top--];
+	return stack[--top];
 }
 void display(int* stack)
 {
