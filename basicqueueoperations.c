@@ -20,7 +20,7 @@ void enqueue(int* queue,int data)
 {
 	if(rear==MAXSIZE-1)
 	printf("\n queue is full\n");
-	queue[rear++]=data;
+	queue[++rear]=data;
 }
 int dequeue(int* queue)
 {
