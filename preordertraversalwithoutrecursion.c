@@ -39,7 +39,7 @@ void preorderwithoutrecursion(struct node* root)
 	  stack[top++]=root;
 	 while(top!=-1)
 	 {
-		root=stack[--top];
+		root=stack[top--];
 		printf("%d ",root->data);
 		if(root->right)
 		stack[top++]=root->right;
